@@ -12,7 +12,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
-Plugin 'takac/vim-hardtime'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'sheerun/vim-polyglot'
 
@@ -24,8 +23,8 @@ filetype plugin indent on    " required
 ""   Put non-Plugin stuff after this line  "
 """"""""""""""""""""""""""""""""""""""""""""
 syntax on
-au BufRead,BufNewFile *.g set filetype=antlr3
-au BufRead,BufNewFile *.g4 set filetype=antlr4
+" au BufRead,BufNewFile *.g set filetype=antlr3
+" au BufRead,BufNewFile *.g4 set filetype=antlr4
 
 set confirm
 
@@ -46,10 +45,6 @@ highlight ColorColumn ctermbg=LightGray
 
 set list
 set listchars=tab:⇥␉,trail:␠,extends:⋯,precedes:⋯,nbsp:⎵
-
-let g:hardtime_default_on          = 1
-let g:hardtime_allow_different_key = 1
-au VimEnter * HardTimeOn
 
 set showcmd
 set noshowmode

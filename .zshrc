@@ -57,8 +57,9 @@ export EDITOR=vim
 # alias antlr4='java org.antlr.v4.Tool -o build -long-messages'
 # alias grun='java org.antlr.v4.gui.TestRig'
 
+alias tree="tree -L 4 --filelimit=16"
 alias ls="ls --classify --sort=version --width=100 --time-style=long-iso --color=auto"
-alias xlock="xlock -mode random"
+alias xlock="xlock -mode random -echokeys -echokey \# -lockdelay 5"
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$HOME/.gem/ruby/2.3.0/bin:$PATH"
 # You may need to manually set your language environment
