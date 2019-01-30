@@ -3,3 +3,5 @@
 	email = dv17wcl@cs.umu.se
 [diff]
 	algorithm = patience
+[core]
+	autocrlf = input

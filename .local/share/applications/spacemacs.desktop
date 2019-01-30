@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Spacemacs
+Exec=zsh -c "emacs -%F"
+Type=Application
+Comment=A community-driven Emacs distribution - The best editor is neither Emacs nor Vim, it´s Emacs and Vim!
+Icon=/home/dv17/dv17wcl/.emacs.d/assets/spacemacs.svg
+MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
+StartupWMClass=Emacs
+Categories=Utility;Development;TextEditor;
