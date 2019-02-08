@@ -23,8 +23,6 @@ filetype plugin indent on    " required
 ""   Put non-Plugin stuff after this line  "
 """"""""""""""""""""""""""""""""""""""""""""
 syntax on
-" au BufRead,BufNewFile *.g set filetype=antlr3
-" au BufRead,BufNewFile *.g4 set filetype=antlr4
 
 set confirm
 

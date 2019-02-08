@@ -1,9 +1,9 @@
 #!/usr/bin/env zsh
-
-source ~/.zshrc.pre-oh-my-zsh
+export DOTFILES_ROOT=~/.dotfiles
+source "$DOTFILES_ROOT/Zsh/.zshrc.pre-oh-my-zsh"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/dv17/dv17wcl/.oh-my-zsh"
+export ZSH="$DOTFILES_ROOT/Zsh/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -49,7 +49,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export EDITOR=vim
+export EDITOR=gvim
 
 export SDKMAN_DIR="/pub/anarchy/sdkman"
 function () {
