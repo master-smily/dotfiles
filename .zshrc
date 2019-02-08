@@ -17,12 +17,12 @@ ZSH_THEME="random"
 # If set to an empty array, this variable will have no effect.
 ZSH_THEME_RANDOM_CANDIDATES=(
     "amuse" "arrow" "avit" "awesomepanda" "bira" "blinks" "bureau" "candy"
-    "dogenpunk" "frisk" "funky" "gallifrey" "gallois" "garyblessington"
-    "gentoo" "gnzh" "jreese" "jtriley" "juanghurtado" "junkfood" "kardan"
-    "kolo" "mortalscumbag" "mrtazz" "muse" "nanotech" "nebirhos" "nicoulaj"
-    "philips" "pygmalion" "robbyrussell" "simple" "smt" "sorin" "sporty_256"
-    "steeef" "sunaku" "sunrise" "superjarin" "suvash" "terminalparty"
-    "theunraveler" "tonotdo" "wedisagree" "wezm" "ys" "zhann"
+    "frisk" "gallifrey" "gallois" "garyblessington" "gentoo" "gnzh" "jreese"
+    "jtriley" "juanghurtado" "junkfood" "kardan" "kolo" "mortalscumbag" "mrtazz"
+    "muse" "nanotech" "nebirhos" "nicoulaj" "philips" "pygmalion" "robbyrussell"
+    "simple" "smt" "sorin" "sporty_256" "steeef" "sunaku" "sunrise" "superjarin"
+    "suvash" "terminalparty" "theunraveler" "tonotdo" "wedisagree" "wezm" "ys"
+    "zhann"
     )
 
 # Uncomment the following line to use case-sensitive completion.
