@@ -44,7 +44,7 @@ set colorcolumn=81,101,121
 highlight ColorColumn ctermbg=LightGray
 
 set list
-set listchars=tab:⇥␉,trail:␠,extends:⋯,precedes:⋯,nbsp:⎵
+set listchars=tab:⇥␉,trail:␣,extends:⋯,precedes:⋯,nbsp:⎵
 
 set showcmd
 set noshowmode
