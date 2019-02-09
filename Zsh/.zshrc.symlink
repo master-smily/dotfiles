@@ -49,7 +49,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export EDITOR=gvim
+export EDITOR=vim
 
 export SDKMAN_DIR="/pub/anarchy/sdkman"
 function () {

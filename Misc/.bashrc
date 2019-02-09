@@ -1,2 +1,1 @@
-export GRADLE_USER_HOME=/scratch/cache-dv17wcl/.gradle
-
+export GRADLE_USER_HOME="$XDG_CACHE_HOME/gradle"

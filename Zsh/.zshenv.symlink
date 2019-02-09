@@ -1,15 +1,18 @@
 #!/usr/bin/env zsh
 export SHELL='/usr/local/bin/zsh'
 
-if [ -d "/scratch" ]; then
-    export USER_CASHE="/scratch/cache-$USER"
+if [ ! -z $XDG_CACHE_HOME ]; then
+    echo "USER_CASHE = §$XDG_CACHE_HOME§"
+    export USER_CASHE=$XDG_CACHE_HOME
 else
     export USER_CASHE="~/.cache"
 fi
 
 export PUB_BIN="/pub/anarchy"
-export GRADLE_USER_HOME="$USER_CASHE/.gradle"
+export GRADLE_USER_HOME="$USER_CASHE/gradle"
 export ZSH_CACHE_DIR="$USER_CASHE/zsh"
+if [[ ! -d $ZSH_CACHE_DIR ]]; then
+      mkdir -pv $ZSH_CACHE_DIR
+fi
 
 export PATH="$HOME/.gem/ruby/2.3.0/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
