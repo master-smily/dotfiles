@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-export SHELL='/usr/local/bin/zsh'
+export SHELL=`which zsh`
 
 if [ ! -z $XDG_CACHE_HOME ]; then
     echo "USER_CASHE = §$XDG_CACHE_HOME§"
