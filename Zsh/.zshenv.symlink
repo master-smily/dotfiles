@@ -2,10 +2,9 @@
 export SHELL=`which zsh`
 
 if [ ! -z $XDG_CACHE_HOME ]; then
-    echo "USER_CASHE = §$XDG_CACHE_HOME§"
     export USER_CASHE=$XDG_CACHE_HOME
 else
-    export USER_CASHE="~/.cache"
+    export USER_CASHE="$USER/.cache"
 fi
 
 export PUB_BIN="/pub/anarchy"
