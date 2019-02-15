@@ -14,7 +14,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'neovimhaskell/haskell-vim'
-Plugin 'phanviet/vim-monokai-pro'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -24,7 +23,6 @@ filetype plugin indent on    " required
 ""   Put non-Plugin stuff after this line  "
 """"""""""""""""""""""""""""""""""""""""""""
 syntax on
-colorscheme monokai_pro
 let g:haskell_classic_highlighting = 1
 let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
 let g:haskell_enable_recursivedo = 1      " to enable highlighting of `mdo` and `rec`
