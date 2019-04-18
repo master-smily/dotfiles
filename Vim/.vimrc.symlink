@@ -13,7 +13,9 @@ Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'neovimhaskell/haskell-vim'
+Plugin 'Sirsireesh/vim-dlang-phobos-highlighter'
+Plugin 'takac/vim-hardtime'
+Plugin 'sheerun/vim-polyglot'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -23,14 +25,6 @@ filetype plugin indent on    " required
 ""   Put non-Plugin stuff after this line  "
 """"""""""""""""""""""""""""""""""""""""""""
 syntax on
-let g:haskell_classic_highlighting = 1
-let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
-let g:haskell_enable_recursivedo = 1      " to enable highlighting of `mdo` and `rec`
-let g:haskell_enable_arrowsyntax = 1      " to enable highlighting of `proc`
-let g:haskell_enable_pattern_synonyms = 1 " to enable highlighting of `pattern`
-let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
-let g:haskell_enable_static_pointers  = 1 " to enable highlighting of `static`
-let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
 
 set confirm
 
@@ -64,3 +58,12 @@ set visualbell
 
 let g:syntastic_enable_signs  = 1
 let g:syntastic_check_on_open = 1
+
+let g:hardtime_default_on = 1
+let g:list_of_normal_keys = ["-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_visual_keys = ["-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_insert_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_disabled_keys = []
+let g:hardtime_showmsg = 1
+
+let g:polyglot_disabled = []
