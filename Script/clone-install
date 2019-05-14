@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+repo=$1
+dir=$2
+if [ ! -d $dir ]; then
+    echo "Installing $repo into $dir"
+    git clone --depth 1 $repo $dir > /dev/null
+fi
