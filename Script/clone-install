@@ -5,4 +5,6 @@ dir=$2
 if [ ! -d $dir ]; then
     echo "Installing $repo into $dir"
     git clone --depth 1 $repo $dir > /dev/null
+else
+    echo "Skipping $repo"
 fi

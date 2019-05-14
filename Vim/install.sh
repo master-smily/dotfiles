@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
-if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
-    git clone --depth 1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-fi
 
+scripts=$(dirname $0)/../Script
+
+$scripts/clone-install https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+echo "Installing Vim plugins"
 vim -c 'PluginInstall' -c 'qa!'
