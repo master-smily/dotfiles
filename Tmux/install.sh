@@ -1,4 +1,4 @@
-#/usr/bin/env sh
+#!/usr/bin/env sh
 
 scripts=$(dirname $0)/../Script
 plug_d=$HOME/.tmux/plugins
