@@ -5,3 +5,5 @@
 	algorithm = patience
 [core]
 	autocrlf = input
+[alias]
+	lg = log --graph --decorate --abbrev-commit --topo-order
