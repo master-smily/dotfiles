@@ -46,21 +46,16 @@ plugins=(
   zsh-syntax-highlighting gradle
 )
 
+
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export EDITOR=vim
 
-#export SDKMAN_DIR="/pub/anarchy/sdkman"
-#function () {
-#    local sdkman_init_path="$SDKMAN_DIR/bin/sdkman-init.sh"
-#    if [ ! -f "$sdkman_init_path" ]; then
-#        curl -s "https://get.sdkman.io" | zsh
-#    fi
-#    source "$sdkman_init_path"
-#}
-
 # alias last to ensure potential installations are done.
 alias tree="tree -L 4 --filelimit=16"
 alias ls="ls --classify --sort=version --width=100 --time-style=long-iso --color=auto"
 alias xlock="xlock -mode random -echokeys -echokey \# -lockdelay 5 -logoutButton 200"
+
+unsetopt BEEP
