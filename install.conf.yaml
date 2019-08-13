@@ -8,4 +8,8 @@
     ~/.bashrc:
     ~/.ghci:
     ~/.ideavimrc:
+    ~/.config/:
+      path: config/*/*
+      create: true
+      glob: true
 
