@@ -1,0 +1,11 @@
+- clean: ['~']
+
+- link:
+    ~/.gitconfig:
+    ~/.gvimrc:
+    ~/.vimrc:
+    ~/.tmux.conf:
+    ~/.bashrc:
+    ~/.ghci:
+    ~/.ideavimrc:
+
