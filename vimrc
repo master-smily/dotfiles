@@ -13,7 +13,6 @@ Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'Sirsireesh/vim-dlang-phobos-highlighter'
 Plugin 'takac/vim-hardtime'
 Plugin 'sheerun/vim-polyglot'
 
@@ -56,8 +55,11 @@ set smartcase
 
 set visualbell
 
-let g:syntastic_enable_signs  = 1
 let g:syntastic_check_on_open = 1
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_enable_signs  = 1
+let g:syntastic_c_config_file = ".syntastic_c_config"
 
 let g:hardtime_default_on = 1
 let g:list_of_normal_keys = ["-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
@@ -67,3 +69,5 @@ let g:list_of_disabled_keys = []
 let g:hardtime_showmsg = 1
 
 let g:polyglot_disabled = []
+
+let g:airline#extensions#tabline#enabled = 1
