@@ -5,13 +5,7 @@
 - clean: ['~', '~/.config/i3', '~/.config/fish']
 
 - link:
-    ~/.gitconfig:
-    ~/.gvimrc:
-    ~/.vimrc:
-    ~/.tmux.conf:
     ~/.bashrc:
-    ~/.ghci:
-    ~/.ideavimrc:
     ~/.config/fish/:
       path: fish/*/*
       create: true
@@ -21,4 +15,10 @@
       path: i3/*
       create: true
       glob: true
+    ~/.ghci:
+    ~/.gitconfig:
+    ~/.gvimrc:
+    ~/.ideavimrc:
+    ~/.tmux.conf:
+    ~/.vimrc:
 
