@@ -1,4 +1,8 @@
-- clean: ['~']
+- defaults:
+    clean:
+      force: true
+
+- clean: ['~', '~/.config/i3', '~/.config/fish']
 
 - link:
     ~/.gitconfig:
@@ -8,8 +12,13 @@
     ~/.bashrc:
     ~/.ghci:
     ~/.ideavimrc:
-    ~/.config/:
-      path: config/*/*
+    ~/.config/fish/:
+      path: fish/*/*
+      create: true
+      glob: true
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/i3/:
+      path: i3/*
       create: true
       glob: true
 
