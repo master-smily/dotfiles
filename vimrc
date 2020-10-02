@@ -36,7 +36,7 @@ set softtabstop=4
 set smarttab
 set smartindent
 set autoindent
-set backspace=indent,eol,start
+set backspace=indent
 
 set nowrap
 set colorcolumn=81,101,121
@@ -68,6 +68,6 @@ let g:list_of_insert_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 let g:list_of_disabled_keys = []
 let g:hardtime_showmsg = 1
 
-let g:polyglot_disabled = []
+" let g:polyglot_disabled = []
 
 let g:airline#extensions#tabline#enabled = 1
