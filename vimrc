@@ -15,15 +15,13 @@ Plug 'ajmwagar/vim-deus'
 " All of your Plugins must be added before the following line
 call plug#end()
 
-""""""""""""""""""""""""""""""""""""""""""""
-""   Put non-Plugin stuff after this line  "
-""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""    Put non-Plugin stuff after this line  """""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
 
 set t_Co=256
 set termguicolors
-let &t_8f = "\e[38;2;%lu;%lu;%lum"
-let &t_8b = "\e[48;2;%lu;%lu;%lum"
 colorscheme deus
 let g:deus_termcolors=256
 highlight StatusLine ctermfg=223 ctermbg=239
@@ -33,6 +31,7 @@ set confirm
 
 set number
 set relativenumber
+set showtabline=1
 
 set expandtab
 set shiftwidth=4
@@ -75,6 +74,33 @@ let g:hardtime_showmsg = 1
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+"" Buffer navigation
+nmap gbn :bn<cr>
+nmap gbp :bp<cr>
+nmap gbb :buffer<space>
+nmap gba :buffer #<cr>
+nmap gb1 :buffer 1<cr>
+nmap gb2 :buffer 2<cr>
+nmap gb3 :buffer 3<cr>
+nmap gb4 :buffer 4<cr>
+nmap gb5 :buffer 5<cr>
+nmap gb6 :buffer 6<cr>
+nmap gb7 :buffer 7<cr>
+nmap gb8 :buffer 8<cr>
+nmap gb9 :buffer 9<cr>
+set timeoutlen=10000
+set ttimeoutlen=100
+
+"" Keymappings
+map Ö :
+map ö ;
+map å {
+map ä }
+map Å [
+map Ä ]
+let mapleader = "§"
 
 if &term =~ "xterm.*"
     let &t_SI.="\e[5 q" "SI = INSERT mode
@@ -83,6 +109,9 @@ if &term =~ "xterm.*"
     autocmd VimLeave * silent !echo -e "\e[5 q"
 endif
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""    Coc: Command of Completion """"""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -91,7 +120,7 @@ set nobackup
 set nowritebackup
 
 " Give more space for displaying messages.
-set cmdheight=2
+" set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -106,7 +135,7 @@ if has("patch-8.1.1564")
       " Recently vim can merge signcolumn and number column into one
     set signcolumn=number
 else
-    set signcolumn=yes
+    set signcolumn=auto
 endif
 
 " Use tab for trigger completion with characters ahead and navigate.
