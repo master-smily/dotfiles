@@ -71,3 +71,10 @@ let g:hardtime_showmsg = 1
 let g:polyglot_disabled = []
 
 let g:airline#extensions#tabline#enabled = 1
+
+if &term =~ "xterm.*"
+    let &t_SI.="\e[5 q" "SI = INSERT mode
+    let &t_SR.="\e[4 q" "SR = REPLACE mode
+    let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
+    autocmd VimLeave * silent !echo -e "\e[5 q"
+endif
