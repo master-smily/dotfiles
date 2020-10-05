@@ -10,7 +10,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'takac/vim-hardtime'
 Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ajmwagar/vim-deus'
+Plug 'nightsense/snow'
 
 " All of your Plugins must be added before the following line
 call plug#end()
@@ -19,13 +19,6 @@ call plug#end()
 """    Put non-Plugin stuff after this line  """""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
-
-set t_Co=256
-set termguicolors
-colorscheme deus
-let g:deus_termcolors=256
-highlight StatusLine ctermfg=223 ctermbg=239
-
 
 set confirm
 
@@ -72,6 +65,11 @@ let g:hardtime_showmsg = 1
 
 " let g:polyglot_disabled = []
 
+set termguicolors
+set background=dark
+colorscheme snow
+let g:airline_theme='snow_dark'
+
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#tabline#buffer_nr_show = 1
@@ -102,12 +100,12 @@ map Å [
 map Ä ]
 let mapleader = "§"
 
-if &term =~ "xterm.*"
-    let &t_SI.="\e[5 q" "SI = INSERT mode
-    let &t_SR.="\e[4 q" "SR = REPLACE mode
-    let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
-    autocmd VimLeave * silent !echo -e "\e[5 q"
-endif
+"" Sets cursor to a bar, underscore or block depending on mode
+let &t_SI="\e[5 q" "SI = INSERT mode
+let &t_SR="\e[4 q" "SR = REPLACE mode
+let &t_EI="\e[1 q" "EI = NORMAL mode (ELSE)
+autocmd VimEnter * silent !echo -e "\e[1 q"
+autocmd VimLeave * silent !echo -e "\e[5 q"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """    Coc: Command of Completion """"""""""""""""""""""""""""""""""""""""""""""
@@ -135,7 +133,7 @@ if has("patch-8.1.1564")
       " Recently vim can merge signcolumn and number column into one
     set signcolumn=number
 else
-    set signcolumn=auto
+    set signcolumn=yes
 endif
 
 " Use tab for trigger completion with characters ahead and navigate.
@@ -242,11 +240,6 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
-
-" Add (Neo)Vim's native statusline support.
-" NOTE: Please see `:h coc-status` for integrations with external plugins that
-" provide custom statusline: lightline.vim, vim-airline.
-" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings for CoCList
 " Show all diagnostics.
