@@ -23,3 +23,5 @@
     ~/.vimrc:
     ~/.zshrc:
 
+- shell:
+    - [./get-vim-plug, Downloading vim-plug]
