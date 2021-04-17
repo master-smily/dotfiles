@@ -22,6 +22,7 @@
     ~/.tmux.conf:
     ~/.vimrc:
     ~/.zshrc:
+    ~/.units:
 
 - shell:
     - [./get-vim-plug, Downloading vim-plug]
