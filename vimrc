@@ -98,7 +98,8 @@ map å {
 map ä }
 map Å [
 map Ä ]
-let mapleader = "§"
+let mapleader="§"
+noremap <Space> §
 
 "" Sets cursor to a bar, underscore or block depending on mode
 let &t_SI="\e[5 q" "SI = INSERT mode
