@@ -6,6 +6,7 @@
 
 - link:
     ~/.bashrc:
+      force: true
     ~/.config/fish/:
       path: fish/*/*
       create: true
