@@ -63,8 +63,6 @@ let g:list_of_insert_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 let g:list_of_disabled_keys = []
 let g:hardtime_showmsg = 1
 
-" let g:polyglot_disabled = []
-
 set termguicolors
 set background=dark
 colorscheme snow

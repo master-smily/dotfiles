@@ -1,2 +1,4 @@
 flop    !
 flops   flop/s
+
+!unitlist sibytes PiB;TiB;GiB;MiB;KiB;bytes
