@@ -2,20 +2,20 @@
     clean:
       force: true
 
-- clean: ['~', '~/.config/i3', '~/.config/fish']
+- clean: ['~', '~/.config/i3', '~/.config/fish', '~/.config/kitty']
 
 - link:
     ~/.bashrc:
       force: true
     ~/.config/fish/:
-      path: fish/*/*
-      create: true
+      path: fish/**
       glob: true
-    ~/.config/fish/config.fish: fish/config.fish
     ~/.config/i3/:
-      path: i3/*
-      create: true
+      path: i3/**
       glob: true
+    ~/.config/kitty/kitty.conf:
+      path: kitty/kitty.conf
+      create: true
     ~/.ghci:
     ~/.gitconfig:
     ~/.gvimrc:
@@ -25,5 +25,5 @@
     ~/.zshrc:
     ~/.units:
 
-- shell:
-    - [./get-vim-plug, Downloading vim-plug]
+- create:
+    - ~/.config
