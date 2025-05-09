@@ -1,5 +1,6 @@
 set -gx EDITOR nvim
 set -gx fish_prompt_pwd_dir_length 4
+set -gx fish_prompt_pwd_full_dirs 3
 
 # set -gx LESS_TERMCAP_vb (set_color ) # emit visual bell
 # set -gx LESS_TERMCAP_mb (set_color green) # start blink
